@@ -1,0 +1,129 @@
+body{
+    /*overflow: hidden;*/
+    text-align: center;
+    background-color: #ffcc03;
+    background-repeat: repeat;
+}
+
+/*.game{
+    position: relative;
+}*/
+
+canvas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.duel-popup{
+    position: relative;
+    width: 50%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.duel-popup p{
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.duel-popup-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.make-duel{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50px;
+    bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #3c59a5;
+    color: #fff;
+    font-family: 'PokemonSolid';
+    text-shadow: -1px -1px 0 #000,
+    1px -1px #000,
+    -1px 1px #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+}
+.hide{
+    opacity: 0;
+}
+.filter{
+    filter: blur(5px);
+}
+
+/*  */
+.conclusion__total{
+    text-align: left;
+    font-size: 55px;
+    text-decoration: underline;
+    margin-top: 70px;
+}
+
+.conclusion{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: #fff;
+    font-family: 'PokemonSolid';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conclusion__text{
+    font-size: 135px;
+    text-shadow: #3c59a5 10px 10px 0,
+    #3c59a5 -10px -10px 0,
+    #3c59a5 -10px 10px 0,
+    #3c59a5 10px -10px 0;
+}
+
+.top_10_text{
+    margin-top: 30px;
+    font-size: 40px;
+    text-shadow: #3c59a5 3px 3px 0,
+    #3c59a5 -3px -3px 0,
+    #3c59a5 -3px 3px 0,
+    #3c59a5 3px -3px 0;
+}
+.top_10{
+    margin-top: 30px;
+    font-family: 'PokemonHollow';
+    text-shadow: #3c59a5 1px 1px 0,
+    #3c59a5 -1px -1px 0,
+    #3c59a5 -1px 1px 0,
+    #3c59a5 1px -1px 0;
+}
+.top_10_li{
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: left;
+}
+.btn-end{
+    position: relative;
+    height: 20px;
+    width: 100px;
+}

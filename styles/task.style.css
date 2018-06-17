@@ -1,0 +1,65 @@
+.task-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  height: 600px; /* 752 */
+  background-color: rgba(0,0,0,0.5);
+}
+
+.task-area{
+  width: 800px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  display: grid;
+  grid-template: 70% 10% 20% / repeat(2, 50%);
+  justify-items: center;
+  grid-template-areas: 'text text' 'input input' 'attack heal';
+}
+.task-text{
+  grid-area: text;
+  margin: 50px auto 0 auto;
+  height: 250px;
+  color: #ffffff;
+  align-self: center;
+}
+
+.task-text-p{
+  font-size: 20px;
+}
+
+.task-answer{
+  grid-area: input;
+  margin-top: 10px;
+  height: 30px;
+
+}
+.btn-cast{
+  width: 240px;
+  height: 70px;
+  bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #3c59a5;
+  color: #fff;
+  font-family: 'PokemonSolid';
+  text-shadow: -1px -1px 0 #000,
+  1px -1px #000,
+  -1px 1px #000,
+  1px 1px 0 #000,
+  1px 1px 0 #000;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+
+.btn-attack{
+  grid-area: attack;
+}
+
+.btn-heal{
+  grid-area: heal;
+}

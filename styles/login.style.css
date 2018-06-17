@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    margin: 0 auto;
+    background-color: #ffcc03;
+    text-align: center;
+    font-family: 'PokemonHollow';
+}
+
+.preview{
+    max-width: 1118px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+}
+.logo{
+    padding-top: 15px;
+    margin: -8px 0 20px 0;
+    user-select: none;
+    cursor: default;
+    user-select: none;
+    color: #ffcc03;
+    font-family: 'PokemonSolid';
+    font-size: 60px;
+    text-shadow: #3c59a5 5px 5px 0, 
+    #3c59a5 -5px -5px 0, 
+    #3c59a5 -5px 5px 0, 
+    #3c59a5 5px -5px 0;
+    animation: blur .75s ease-out infinite;
+}
+.item{
+    color: #ffcc03;
+    font-family: 'PokemonSolid';  
+    font-size: 40px;
+    text-shadow: -3px -3px 0 #3c59a5,
+    3px -3px #3c59a5,
+    -3px 3px #3c59a5,
+    3px 3px 0 #3c59a5,
+    3px 3px 0 #3c59a5;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+.form-login{
+  margin-top: 60px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.form-login input{
+  margin-bottom: 15px;
+  margin-top: 15px;
+  height: 30px;
+}
+.bttns-container{
+  margin: 0 auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.butt-start{
+  margin: 0;
+  padding-top: 0px;
+  font-weight: 400;
+  line-height: 60px;
+  z-index: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  outline: 3px dashed transparent;
+  cursor: pointer;
+  border: 3px solid transparent;
+  font-family: 'PokemonSolid';
+  text-decoration: none;
+  }
+.butt-start:hover{
+  border: 3px solid #3c59a5;
+}

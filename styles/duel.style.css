@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+body{
+  text-align: center;
+  font-family: 'PokemonHollow';
+}
+.duel-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1300px;
+  height: 640px; /* 752 */
+  background-image: url(../assets/images/battlegr-size.jpg);
+}
+
+.hp-scale-left{
+  height: 30px;
+  width: 400px;
+  background-color: red;
+  border: 2px solid black;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.hp-scale-right{
+  height: 30px;
+  width: 400px;
+  background-color: red;
+  border: 2px solid black;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.pokemon-left{
+  background-image: url(../assets/images/pokemons/pikachu.png);
+  display: block;
+  height: 150px;
+  width: 147px;
+  position: absolute;
+  top: 400px;
+  left: 200px;
+  /*transition: all 2s ease 0.5s;*/
+}
+.pokemon-right{
+  /*background-image: url(../assets/images/pokemons/charmander.png);*/
+  /*background-image: url(../assets/images/pokemons/squirtle.png);*/
+  /*background-image: url(../assets/images/pokemons/evee.png);*/
+  /*background-image: url(../assets/images/pokemons/render.png);*/
+  /*background-image: url(../assets/images/pokemons/bulbasaur.png);*/
+  height: 150px;
+  width: 218px;
+  display: block;
+  position: absolute;
+  top: 400px;
+  right: 200px;
+}
+.popup-attack{
+  background-image: url(../assets/images/spells-panel.png);
+  width: 450px;
+  height: 240px;
+  position: absolute;
+  top: 200px;
+  left: 425px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.simple-attack{
+  height: 80px;
+  width: 80px;
+  background: url(../assets/images/simple-attack.png);
+  border: 5px solid #2a1648;
+  border-radius: 5px;;
+  color: #ffffff;
+}
+.middle-attack{
+  height: 80px;
+  width: 80px;
+  background: url(../assets/images/middle-attack.png);
+  border: 5px solid #2a1648;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.special-attack{
+  height: 80px;
+  width: 80px;
+  background: url(../assets/images/special-attack.png);
+  border: 5px solid #2a1648;
+  border-radius: 5px;
+  color: #ffffff;
+} 
+.simple-animation{
+  position: absolute;
+  opacity: 0;
+  top: 270px;
+  left: 340px;
+  height: 300px;
+  width: 600px;
+  /*background:  url(../assets/images/middle-spell.png);*/
+  animation: 0.5s spell-animate 2 1s;
+}
+.heal-animation{
+  background:  url(../assets/images/heal-spell.png);
+  position: absolute;
+  opacity: 0;
+  top: 300px;
+  left: 250px;
+  height: 125px;
+  width: 73px;
+  animation: 0.5s spell-animate 2 1s;
+}
+.hide{
+  display: none;
+}
+
+.charmander{
+  background-image: url(../assets/images/pokemons/charmander.png);
+}
+
+.squirtle{
+  background-image: url(../assets/images/pokemons/squirtle.png);
+}
+
+.evee{
+  background-image: url(../assets/images/pokemons/evee.png);
+}
+
+.render{
+  background-image: url(../assets/images/pokemons/render.png);
+}
+
+.bulbasaur{
+  background-image: url(../assets/images/pokemons/bulbasaur.png);
+}

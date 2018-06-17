@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pokemon GAME</title>
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<main>
+		<audio src="assets/audio/song.mp3" type="audio/mp3" autoplay loop></audio>
+		<section class="preview">
+	 		<div class="logo">
+				<h1>Pokemon GAME</h1>
+			</div>
+			<div class="form-login">
+					<p>First Name:</p>
+					<input type="text" class="first-name">
+					<p>Last Name:</p>
+					<input type="text" class="last-name">
+					<p>email:</p>
+					<input type="email" class="email">
+				</div>
+			<div class="bttns-container">
+				<input type="submit" value="start" class="butt-start item">
+			</div>	
+		</section>
+		<section class="game" style="display: none;">
+			<canvas class="canvas"></canvas>
+			<div class="duel-popup-overlay hide">
+				<div class="duel-popup">
+					<p class="duel-text">Ты хочешь сразиться со мной? Я готов! Посмотрим, на что ты способен!</p>
+					<button class="make-duel">Start a battle</button>
+				</div>
+			</div>
+		</section>
+		<section class="conclusion" style="display: none;">
+			<p class="conclusion__text">Game over</p>
+			<p class="top_10_text">Top 10:</p>
+			<ol class="top_10">
+			</ol>
+			<button class="make-duel play-again">Play</button>
+		</section>
+	</main>
+	<footer>	 
+	</footer>
+	<script src="js/canvas.js" defer></script>
+	<script src="js/preview.buttons.js" defer></script>
+
+	<script src="js/duel-task.js" defer></script>
+	<script src="js/conclusion.js" defer></script>
+</body>
+</html>

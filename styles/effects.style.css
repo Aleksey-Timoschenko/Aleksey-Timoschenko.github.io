@@ -1,0 +1,170 @@
+@keyframes blur {          						/* LOGO */
+	from {
+		text-shadow:0px 0px 10px #fff,
+			0px 0px 10px #fff, 
+			0px 0px 25px #fff,
+			0px 0px 25px #fff,
+			0px 0px 25px #fff,
+			0px 0px 25px #fff,
+			0px 0px 25px #fff,
+			0px 0px 25px #fff,
+			0px 0px 50px #fff,
+			0px 0px 50px #fff,
+			0px 0px 50px #7B96B8,
+			0px 0px 150px #7B96B8,
+			0px 10px 100px #7B96B8,
+			0px 10px 100px #7B96B8,
+			0px 10px 100px #7B96B8,
+			0px 10px 100px #7B96B8,
+			0px -10px 100px #7B96B8,
+			0px -10px 100px #7B96B8;
+	}
+}
+
+.upside-down{
+    transform: rotateY(180deg);
+}
+@keyframes disappearing{
+	from{
+		top:0px;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	to{
+		opacity: 0;
+		top: -1000px;
+	}
+}
+.vanishing-up{ /* уход в верх */
+	animation: disappearing 1s cubic-bezier(.44,-0.6,.82,.91);
+}
+.appearing{ /* плавное появление */
+	animation: opacityPlus 1s linear;
+}
+@keyframes asideAppearing{
+	from{
+		height: 0px;
+	}
+	to{
+		height: 520px;
+	}
+}
+@keyframes asideDisappearing{
+	from{
+		height: 520px;
+	}
+	to{
+		height: 0px;
+	}
+}
+@keyframes opacityPlus{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes opacityMinus{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+.opacity-plus{
+	animation: opacityPlus 1.5s linear;
+}
+.opacity-minus{
+	animation: opacityMinus .3s linear;	
+}
+
+/* */
+
+.pokemon-jump-animation{
+  animation: go-top-bottom 1s 2 alternate;
+}
+.pokemon-tremor-animation{
+  -webkit-animation: 0.1s tremor 4 alternate 1s;  
+  animation: 0.1s tremor 8 alternate 1s; 
+}
+@keyframes go-top-bottom {   
+  from {
+    top: 400px;
+  }
+  to {
+    top: 300px;
+  }
+}
+@-webkit-keyframes tremor {
+  0%, 25% {
+      right: 199px;
+      top: 399px;
+      -webkit-transform: translateX(-4%);
+      transform: translateX(-4%);
+  }
+  50%, 100% {
+      right: 201px;
+      top: 401px;
+      -webkit-transform: translateX(4%);
+      transform: translateX(4%);
+  }
+}
+@-moz-keyframes tremor {
+  0%, 25% {
+    right: 199px;
+      -webkit-transform: translateX(-4%);
+      transform: translateX(-4%);
+  }
+  50%, 100% {
+      right: 201px;
+      -webkit-transform: translateX(4%);
+      transform: translateX(4%);
+  }
+}
+@-ms-keyframes tremor {
+  0%, 25% {
+      right: 199px;
+      -webkit-transform: translateX(-4%);
+      transform: translateX(-4%);
+  }
+  50%, 100% {
+      right: 201px;
+      -webkit-transform: translateX(4%);
+      transform: translateX(4%);
+  }
+}
+@-o-keyframes tremor {
+  0%, 25% {
+      right: 199px;
+      -webkit-transform: translateX(-4%);
+      transform: translateX(-4%);
+  }
+  50%, 100% {
+      right: 201px;
+      -webkit-transform: translateX(4%);
+      transform: translateX(4%);
+  }
+}
+@keyframes tremor {
+  0%, 25% {
+      right: 199px;
+      -webkit-transform: translateX(-4%);
+      transform: translateX(-4%);
+  }
+  50%, 100% {
+      right: 201px;
+      -webkit-transform: translateX(4%);
+      transform: translateX(4%);
+  }
+}
+@keyframes spell-animate {   
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
